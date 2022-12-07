@@ -15,7 +15,7 @@ const ItemList = ({ title = 'Items', items, update, remove }: ItemsProps) => {
 
 
   return (
-    <section id={id} className="w-full p-4 border-2 border-primary-200">
+    <section id={id} className="w-full p-4 overflow-auto border-2 border-primary-200 h-96">
       <header className="mb-4">
         <h2 className="text-lg font-semibold">{title}</h2>
       </header>

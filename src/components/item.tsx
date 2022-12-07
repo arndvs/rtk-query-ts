@@ -25,27 +25,31 @@ const Item = ({ item }: ItemProps) => {
       >
         {item.name}
       </label>
-      <input
-        value={item.name}
-        id={`edit-${item.id}`}
-        className={clsx('py-0 text-sm', { hidden: !editing })}
-        onChange={() => {}}
-      />
-      <div className="flex gap-2">
-        <button
-          className="px-2 py-0 text-xs"
-          aria-label={`Edit "${item.name}"`}
-          onClick={() => setEditing(!editing)}
-        >
-          {editing ? '💾 Save' : '✍️ Edit'}
-        </button>
-        <button
-          className="px-2 py-0 text-xs"
-          aria-label={`Remove "${item.name}"`}
-          onClick={() => {}}
-        >
-          🗑 Remove
-        </button>
+      <div className="flex justify-between">
+          <div className="">
+              <input
+                value={item.name}
+                id={`edit-${item.id}`}
+                className={clsx('py-0 text-sm', { hidden: !editing })}
+                onChange={() => {}}
+              />
+          </div>
+          <div className="flex gap-2">
+            <button
+              className="px-2 py-0 text-xs"
+              aria-label={`Edit "${item.name}"`}
+              onClick={() => setEditing(!editing)}
+            >
+              {editing ? '💾 Save' : '✍️ Edit'}
+            </button>
+            <button
+              className="px-2 py-0 text-xs"
+              aria-label={`Remove "${item.name}"`}
+              onClick={() => {}}
+            >
+              🗑 Remove
+            </button>
+          </div>
       </div>
     </li>
   );

@@ -56,7 +56,7 @@ const TaskManager = () => {
 
   return (
     <>
-        <main className="flex flex-col gap-8 p-8 mx-auto lg:max-w-4xl">
+        <div className="flex flex-col gap-8 p-12 mx-auto bg-black border-8 border-white shadow-2xl lg:max-w-4xl rounded-xl">
           <div className="flex items-center justify-between">
               <div>
                   <Header count={0} />
@@ -85,7 +85,7 @@ const TaskManager = () => {
             />
           </section>
           <MarkAllAsUnpacked />
-        </main>
+        </div>
     </>
   );
 };

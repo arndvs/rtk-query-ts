@@ -1,17 +1,17 @@
 import { createServer, Model, RestSerializer } from 'miragejs';
 
 const items = [
-  'Sweatshirt',
-  'Running shoes',
-  'AirPods',
-  'MacBook',
-  'iPad',
-  'USB-C cable',
-  'Lightning cable',
-  'Wallet',
-  'MagSafe cable',
-  'Apple Watch charger',
-  'Power brick',
+  'Antlers',
+  'Bowling Ball',
+  'Coffee/Espresso Maker',
+  'Live Lobster Fish',
+  'My Desktop Computer (and monitors)',
+  'Night Vision Goggles',
+  'Fresh Organic Eggs',
+  'Sand',
+  'Tortilla Press',
+  'Christmas Lights',
+  'Rumba Vacum Robot',
   'Toothbrush',
   'Toothpaste',
   'Deorderant',
@@ -22,8 +22,6 @@ const items = [
   'Sleep mask',
   'Ear plugs',
   'Face masks',
-  'Sony Walkman',
-  'Emergency Vegan Bacon',
 ];
 
 const ApplicationSerializer = RestSerializer.extend({});

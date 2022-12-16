@@ -1,6 +1,7 @@
 import Head from 'next/head'
+import { Counter } from '../src/components/counter/counter'
 
-import TaskManager from '../src/components/task-manager'
+import TaskManager from '../src/components/todo/task-manager'
 
 import styles from '../styles/Home.module.css'
 
@@ -15,6 +16,7 @@ export default function Home() {
       </Head>
 <h1 className="w-full"> Next Redux RTK Query Typescript Tailwind </h1>
     <div className="p-12 ">
+        <Counter />
         <TaskManager />
     </div>
     </div>

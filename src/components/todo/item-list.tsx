@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { toKebabCase } from '../lib/kebab-case';
+import { toKebabCase } from '../../lib/kebab-case';
+
 import Item from './item';
 
 type ItemsProps = {

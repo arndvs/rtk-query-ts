@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 
-import { useGetItemsQuery } from '../services/api-service';
+import { useGetItemsQuery } from '../../services/api-service';
 import Header from './header';
 import ItemList from './item-list';
 import MarkAllAsUnpacked from './mark-all-as-unpacked';
@@ -11,7 +11,7 @@ import {
     getInitialItems,
     removeItem,
     updateItem,
-  } from '../lib/items';
+  } from '../../lib/items';
 
 const TaskManager = () => {
 
